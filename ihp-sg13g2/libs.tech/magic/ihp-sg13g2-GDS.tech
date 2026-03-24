@@ -1056,15 +1056,169 @@ style patternfill variants (),(tiled)
         shrink  995
         grow    995
 
- templayer      obstruct_m2_fine BIPOLARID,PADID,EDGESEAL
+ templayer      obstruct_m2_fine_long_offset_0 BIPOLARID,PADID,EDGESEAL
 	grow	580
 	or	ALLM2,MET2BLOCK,MET2FILL,FILLBLOCK
 	or	met2fill_coarse,met2fill_medium
         grow    420
 
- templayer	met2fill_fine topbox
+ templayer	met2fill_fine_long_offset_0 topbox
+        slots   0 1200 420 0 3600 420 300 0
+        and-not obstruct_m2_fine_long_offset_0
+	and	topbox
+	orthogonal
+        shrink  595
+        grow    595
+
+ templayer      obstruct_m2_fine_long_offset_200 BIPOLARID,PADID,EDGESEAL
+	grow	580
+	or	ALLM2,MET2BLOCK,MET2FILL,FILLBLOCK
+	or	met2fill_coarse,met2fill_medium,met2fill_fine_long_offset_0
+        grow    420
+
+ templayer	met2fill_fine_long_offset_200 topbox
+        slots   0 1200 420 0 3600 420 300 200
+        and-not obstruct_m2_fine_long_offset_200
+	and	topbox
+	orthogonal
+        shrink  595
+        grow    595
+
+ templayer      obstruct_m2_fine_long_offset_400 BIPOLARID,PADID,EDGESEAL
+	grow	580
+	or	ALLM2,MET2BLOCK,MET2FILL,FILLBLOCK
+	or	met2fill_coarse,met2fill_medium,met2fill_fine_long_offset_0,met2fill_fine_long_offset_200
+        grow    420
+
+ templayer	met2fill_fine_long_offset_400 topbox
+        slots   0 1200 420 0 3600 420 300 400
+        and-not obstruct_m2_fine_long_offset_400
+	and	topbox
+	orthogonal
+        shrink  595
+        grow    595
+
+ templayer      obstruct_m2_fine_long_offset_600 BIPOLARID,PADID,EDGESEAL
+	grow	580
+	or	ALLM2,MET2BLOCK,MET2FILL,FILLBLOCK
+	or	met2fill_coarse,met2fill_medium,met2fill_fine_long_offset_0,met2fill_fine_long_offset_200,met2fill_fine_long_offset_400
+        grow    420
+
+ templayer	met2fill_fine_long_offset_600 topbox
+        slots   0 1200 420 0 3600 420 300 600
+        and-not obstruct_m2_fine_long_offset_600
+	and	topbox
+	orthogonal
+        shrink  595
+        grow    595
+
+ templayer      obstruct_m2_fine_long_offset_800 BIPOLARID,PADID,EDGESEAL
+	grow	580
+	or	ALLM2,MET2BLOCK,MET2FILL,FILLBLOCK
+	or	met2fill_coarse,met2fill_medium,met2fill_fine_long_offset_0,met2fill_fine_long_offset_200,met2fill_fine_long_offset_400,met2fill_fine_long_offset_600
+        grow    420
+
+ templayer	met2fill_fine_long_offset_800 topbox
+        slots   0 1200 420 0 3600 420 300 800
+        and-not obstruct_m2_fine_long_offset_800
+	and	topbox
+	orthogonal
+        shrink  595
+        grow    595
+
+ templayer      obstruct_m2_fine_long_offset_1000 BIPOLARID,PADID,EDGESEAL
+	grow	580
+	or	ALLM2,MET2BLOCK,MET2FILL,FILLBLOCK
+	or	met2fill_coarse,met2fill_medium,met2fill_fine_long_offset_0,met2fill_fine_long_offset_200,met2fill_fine_long_offset_400,met2fill_fine_long_offset_600,met2fill_fine_long_offset_800
+        grow    420
+
+ templayer	met2fill_fine_long_offset_1000 topbox
+        slots   0 1200 420 0 3600 420 300 1000
+        and-not obstruct_m2_fine_long_offset_1000
+	and	topbox
+	orthogonal
+        shrink  595
+        grow    595
+
+ templayer      obstruct_m2_fine_offset_0 BIPOLARID,PADID,EDGESEAL
+	grow	580
+	or	ALLM2,MET2BLOCK,MET2FILL,FILLBLOCK
+	or	met2fill_coarse,met2fill_medium,met2fill_fine_long_offset_0,met2fill_fine_long_offset_200,met2fill_fine_long_offset_400,met2fill_fine_long_offset_600,met2fill_fine_long_offset_800,met2fill_fine_long_offset_1000
+        grow    420
+
+ templayer	met2fill_fine_offset_0 topbox
         slots   0 1200 420 0 1200 420 300 0
-        and-not obstruct_m2_fine
+        and-not obstruct_m2_fine_offset_0
+	and	topbox
+	orthogonal
+        shrink  595
+        grow    595
+
+ templayer      obstruct_m2_fine_offset_200 BIPOLARID,PADID,EDGESEAL
+	grow	580
+	or	ALLM2,MET2BLOCK,MET2FILL,FILLBLOCK
+	or	met2fill_coarse,met2fill_medium,met2fill_fine_long_offset_0,met2fill_fine_long_offset_200,met2fill_fine_long_offset_400,met2fill_fine_long_offset_600,met2fill_fine_long_offset_800,met2fill_fine_long_offset_1000,met2fill_fine_offset_0
+        grow    420
+
+ templayer	met2fill_fine_offset_200 topbox
+        slots   0 1200 420 0 1200 420 300 200
+        and-not obstruct_m2_fine_offset_200
+	and	topbox
+	orthogonal
+        shrink  595
+        grow    595
+
+ templayer      obstruct_m2_fine_offset_400 BIPOLARID,PADID,EDGESEAL
+	grow	580
+	or	ALLM2,MET2BLOCK,MET2FILL,FILLBLOCK
+	or	met2fill_coarse,met2fill_medium,met2fill_fine_long_offset_0,met2fill_fine_long_offset_200,met2fill_fine_long_offset_400,met2fill_fine_long_offset_600,met2fill_fine_long_offset_800,met2fill_fine_long_offset_1000,met2fill_fine_offset_0,met2fill_fine_offset_200
+        grow    420
+
+ templayer	met2fill_fine_offset_400 topbox
+        slots   0 1200 420 0 1200 420 300 400
+        and-not obstruct_m2_fine_offset_400
+	and	topbox
+	orthogonal
+        shrink  595
+        grow    595
+
+ templayer      obstruct_m2_fine_offset_600 BIPOLARID,PADID,EDGESEAL
+	grow	580
+	or	ALLM2,MET2BLOCK,MET2FILL,FILLBLOCK
+	or	met2fill_coarse,met2fill_medium,met2fill_fine_long_offset_0,met2fill_fine_long_offset_200,met2fill_fine_long_offset_400,met2fill_fine_long_offset_600,met2fill_fine_long_offset_800,met2fill_fine_long_offset_1000,met2fill_fine_offset_0,met2fill_fine_offset_200,met2fill_fine_offset_400
+        grow    420
+
+ templayer	met2fill_fine_offset_600 topbox
+        slots   0 1200 420 0 1200 420 300 600
+        and-not obstruct_m2_fine_offset_600
+	and	topbox
+	orthogonal
+        shrink  595
+        grow    595
+
+ templayer      obstruct_m2_fine_offset_800 BIPOLARID,PADID,EDGESEAL
+	grow	580
+	or	ALLM2,MET2BLOCK,MET2FILL,FILLBLOCK
+	or	met2fill_coarse,met2fill_medium,met2fill_fine_long_offset_0,met2fill_fine_long_offset_200,met2fill_fine_long_offset_400,met2fill_fine_long_offset_600,met2fill_fine_long_offset_800,met2fill_fine_long_offset_1000,met2fill_fine_offset_0,met2fill_fine_offset_200,met2fill_fine_offset_400,met2fill_fine_offset_600
+        grow    420
+
+ templayer	met2fill_fine_offset_800 topbox
+        slots   0 1200 420 0 1200 420 300 800
+        and-not obstruct_m2_fine_offset_800
+	and	topbox
+	orthogonal
+        shrink  595
+        grow    595
+
+ templayer      obstruct_m2_fine_offset_1000 BIPOLARID,PADID,EDGESEAL
+	grow	580
+	or	ALLM2,MET2BLOCK,MET2FILL,FILLBLOCK
+	or	met2fill_coarse,met2fill_medium,met2fill_fine_long_offset_0,met2fill_fine_long_offset_200,met2fill_fine_long_offset_400,met2fill_fine_long_offset_600,met2fill_fine_long_offset_800,met2fill_fine_long_offset_1000,met2fill_fine_offset_0,met2fill_fine_offset_200,met2fill_fine_offset_400,met2fill_fine_offset_600,met2fill_fine_offset_800
+        grow    420
+
+ templayer	met2fill_fine_offset_1000 topbox
+        slots   0 1200 420 0 1200 420 300 1000
+        and-not obstruct_m2_fine_offset_1000
 	and	topbox
 	orthogonal
         shrink  595
@@ -1072,7 +1226,18 @@ style patternfill variants (),(tiled)
 
  layer	MET2FILL met2fill_coarse
 	or met2fill_medium
-	or met2fill_fine
+	or met2fill_fine_long_offset_0
+	or met2fill_fine_long_offset_200
+	or met2fill_fine_long_offset_400
+	or met2fill_fine_long_offset_600
+	or met2fill_fine_long_offset_800
+	or met2fill_fine_long_offset_1000
+	or met2fill_fine_offset_0
+	or met2fill_fine_offset_200
+	or met2fill_fine_offset_400
+	or met2fill_fine_offset_600
+	or met2fill_fine_offset_800
+	or met2fill_fine_offset_1000
  	calma 	10 22
 
 #---------------------------------------------------
