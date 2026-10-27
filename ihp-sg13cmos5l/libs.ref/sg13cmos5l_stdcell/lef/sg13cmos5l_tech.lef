@@ -641,6 +641,24 @@ Via Via2_DC2R DEFAULT
         RECT -0.515 -0.145 0.105 0.145 ;
 END Via2_DC2R
 
+#######  Definitions of Via2 quad cut ##############
+
+Via Via2_QC DEFAULT
+    RESISTANCE 5.0 ;
+    LAYER Metal2 ;
+        RECT -0.305 -0.360 0.305 0.360 ;
+    LAYER Via2 ;
+        RECT -0.300 -0.300 -0.110 -0.110 ;
+    LAYER Via2 ;
+        RECT 0.110 -0.300 0.300 -0.110 ;
+    LAYER Via2 ;
+        RECT -0.300 0.110 -0.110 0.300 ;
+    LAYER Via2 ;
+        RECT 0.110 0.110 0.300 0.300 ;
+    LAYER Metal3 ;
+        RECT -0.305 -0.360 0.305 0.360 ;
+END Via2_QC
+
 #######  Definitions of Via3 single cut ##############
 
 Via  Via3_XX DEFAULT
@@ -831,6 +849,24 @@ Via Via3_DC2R DEFAULT
     LAYER Metal4 ;
         RECT -0.515 -0.145 0.105 0.145 ;
 END Via3_DC2R
+
+#######  Definitions of Via3 quad cut ##############
+
+Via Via3_QC DEFAULT
+    RESISTANCE 5.0 ;
+    LAYER Metal3 ;
+        RECT -0.305 -0.360 0.305 0.360 ;
+    LAYER Via3 ;
+        RECT -0.300 -0.300 -0.110 -0.110 ;
+    LAYER Via3 ;
+        RECT 0.110 -0.300 0.300 -0.110 ;
+    LAYER Via3 ;
+        RECT -0.300 0.110 -0.110 0.300 ;
+    LAYER Via3 ;
+        RECT 0.110 0.110 0.300 0.300 ;
+    LAYER Metal4 ;
+        RECT -0.305 -0.360 0.305 0.360 ;
+END Via3_QC
 
 #######   TopVia1 (M4 to TM1)   ##############
 
