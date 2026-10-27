@@ -2527,10 +2527,10 @@ MACRO sg13cmos5l_IOPadAnalog
     DIRECTION INOUT ;
     USE SIGNAL ;
     PORT
-      LAYER Metal2 ;
-        RECT 57.460 147.180 57.750 180.000 ;
+#      LAYER Metal2 ;
+#        RECT 57.460 147.180 57.750 180.000 ;
       LAYER Metal3 ;
-        RECT 57.355 179.710 57.855 180.000 ;
+        RECT 57.155 179.710 58.055 180.000 ;
     END
   END padres
   PIN vdd
